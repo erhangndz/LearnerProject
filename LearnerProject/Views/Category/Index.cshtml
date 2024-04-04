@@ -13,7 +13,7 @@
     <tr>
         <th>#</th>
         <th>Kategori Adı</th>
-        <th>Durum</th>
+       
         <th>İşlemler</th>
     </tr>
 
@@ -22,11 +22,10 @@
         count++;
         <tr>
             <th>@count</th>
-            <td>@item.CategoryName</td>
-            <td>@item.Status</td>
+            <td>@item.CategoryName</td> 
             <td>
-                <a href="/Category/DeleteCategory/@item.CategoryId" class="btn btn-outline-danger">Sil</a>
-                <a href="/Category/UpdateCategory/@item.CategoryId" class="btn btn-outline-info">Güncelle</a>
+                <a href="/Category/DeleteCategory/@item.CategoryId" class="btn btn-outline-danger"><i class="fa fa-trash"></i> Sil</a>
+                <a href="/Category/UpdateCategory/@item.CategoryId" class="btn btn-outline-info"><i class="fa fa-pen"></i> Güncelle</a>
             </td>
         </tr>
     }
