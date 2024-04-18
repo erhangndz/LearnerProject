@@ -21,6 +21,8 @@ namespace LearnerProject.Models.Entities
         public List<Review> Reviews { get; set; }
         public List<CourseRegister> CourseRegisters { get; set; }
 
+        public List<CourseVideo> CourseVideos { get; set; }
+
 
     }
 }
