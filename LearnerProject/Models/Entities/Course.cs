@@ -13,10 +13,13 @@ namespace LearnerProject.Models.Entities
         public string Description { get; set; }
         public decimal Price { get; set; }
         public int CategoryId { get; set; }
+
+        public int? TeacherId { get; set; }
+
+        public virtual Teacher Teacher { get; set; }
         public virtual Category Category { get; set; }
         public List<Review> Reviews { get; set; }
         public List<CourseRegister> CourseRegisters { get; set; }
-
 
 
     }
